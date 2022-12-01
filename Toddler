@@ -1,0 +1,20 @@
+package InheritancePackage;
+
+public class Toddler extends AdultPerson{
+    int studentID, GradeLevel;
+    String IsOnTheSchool = "No", MakingAssign ="Yes", IsAtHome ="Yes";
+    boolean e = Boolean.parseBoolean(IsOnTheSchool);
+    boolean f = Boolean.parseBoolean(MakingAssign);
+    boolean g = Boolean.parseBoolean(IsAtHome);
+
+
+    Toddler()
+    {}
+
+    Toddler(String fName, String address, String gender, String cNumber, int age, int studentID, int GradeLevel)
+    {
+        super(fName,gender,address, cNumber, age);
+        this.studentID = studentID;
+        this.GradeLevel = GradeLevel;
+
+    }
